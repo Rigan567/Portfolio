@@ -32,7 +32,7 @@ const NavContent = () => {
         <a href="#services">Services</a>
 
         <a href="#timeline">Experience</a>
-        <a href="#testimonial">Testimonial</a>
+        <a href="#testimonial">Skills</a>
         <a href="#contact">Contact</a>
       </div>
       <a href="mailto:rigan.paul@g.bracu.ac.bd">

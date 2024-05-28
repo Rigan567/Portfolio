@@ -95,6 +95,16 @@
         position: absolute;
         z-index: -1;
         border-radius: 50%;
+        // &::after {
+        //   content: "abccc";
+        //   width: 20vmax;
+        //   height: 28vmax;
+        //   background-color: $color5;
+        //   position: absolute;
+        //   z-index: -1;
+        //   border-radius: 50% 0 0 50%;
+        //   z-index: 100;
+        // }
       }
       > img {
         width: 40vmax;

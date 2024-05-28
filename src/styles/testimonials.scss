@@ -1,49 +1,56 @@
 #testimonial {
+  height: 100%;
   width: 100%;
-  padding: $p;
-  background-color: $color4;
+  padding: $p_base;
+  background-color: $color5;
   color: $color5;
-  > h2 {
-    font: 700 2.5rem $text2;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
+
   > section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    height: 40rem;
-    padding: 8rem;
+    width: 100%;
+
+    padding: 2rem;
     background-color: $color1;
-    gap: 20px;
-    > article {
+    justify-content: center;
+    align-items: center;
+    > h2 {
+      font: 700 2.5rem $text2;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    > .skillbox {
+      padding: 10px;
+
+      width: 100%;
+      margin: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       height: 100%;
-      width: 30%;
-      background-color: $color4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      position: relative;
-      img {
-        top: 0%;
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-        border-radius: 50%;
-        transform: translateY(-50%);
-      }
-      > p {
-        letter-spacing: 2px;
-        margin: 20px 0;
-        font-size: 0.9rem;
-        line-height: 160%;
-        text-align: center;
-        overflow: hidden;
+      gap: 2rem;
+      // border: 1px solid black;
+
+      > .cards {
+        display: flex; /* Ensure img is centered within card */
+        justify-content: center; /* Centers img horizontally */
+        align-items: center; /* Centers img vertically */
+        width: 100%;
+        filter: drop-shadow(6px 3px 2px $color5);
+        transition: transform 0.3s ease, filter 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.5);
+          filter: drop-shadow(10px 5px 4px $color5);
+        }
+        > img {
+          // border: 1px solid black;
+          background-color: $color4;
+          padding: 1.8rem;
+          width: 150px;
+          height: 150px;
+          object-fit: contain;
+          border-radius: 20%;
+        }
       }
     }
   }

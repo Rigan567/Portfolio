@@ -1,10 +1,29 @@
 import React, { useState } from "react";
 import vg from "../assets/vg.png";
+import { motion } from "framer-motion";
 
 const Contact = () => {
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
+  const animations = {
+    initial: {
+      x: -100,
+      opacity: 0,
+    },
+    whileInView: {
+      x: 0,
+      opacity: 1,
+    },
+    initialAsideView: {
+      y: 100,
+      opacity: 0,
+    },
+    asideView: {
+      x: 100,
+      y: 0,
+      opacity: 1,
+    },
+    transition: { duration: 0.8, ease: "easeOut" },
+  };
+
   const [inputs, setInputs] = useState({ name: "", email: "", message: "" });
 
   const changeHandler = (e) => {
@@ -16,7 +35,11 @@ const Contact = () => {
   };
   return (
     <div id="contact">
-      <section>
+      <motion.section
+        whileInView={animations.whileInView}
+        initial={animations.initial}
+        transition={animations.transition}
+      >
         <form onSubmit={submitHandler}>
           <h2>Contact Me</h2>
           <input
@@ -45,9 +68,15 @@ const Contact = () => {
           />
           <button type="submit"> Send</button>
         </form>
-      </section>
+      </motion.section>
       <aside>
-        <img src={vg} alt="Graphics" />
+        <motion.div
+          initial={animations.initialAsideView}
+          whileInView={animations.asideView}
+          transition={animations.transition}
+        >
+          <img src={vg} alt="Graphics" />
+        </motion.div>
       </aside>
     </div>
   );

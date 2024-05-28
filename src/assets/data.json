@@ -3,14 +3,14 @@
     {
       "date": "2/2024",
       "title": "Netflix Clone",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "description": "A frontend clone of Netflix home page UI with responsive design. Used tech ReactJS & SCSS.",
       "url": "https://rigan567.github.io/Netflix/",
       "imgSrc": "https://raw.githubusercontent.com/Rigan567/Netflix/main/src/img/netflix.png"
     },
     {
       "date": "2/2024",
       "title": "ChatApp",
-      "description": "Chat-App. Used Tech: ReactJS, Chakra UI , SCSS & Firebase",
+      "description": "A realtime Chat Application. Used Tech: ReactJS, Chakra UI , SCSS & Firebase",
       "url": "https://rigan567.github.io/ChatApp/",
       "imgSrc": "https://raw.githubusercontent.com/Rigan567/ChatApp/main/src/chatapp.png"
     },
@@ -18,7 +18,7 @@
     {
       "date": "3/2024",
       "title": "GameZ",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "description": "A practice project using Chakra UI and ReactJS",
       "url": "https://rigan567.github.io/GameZ/",
       "imgSrc": "https://raw.githubusercontent.com/Rigan567/GameZ/main/src/assets/gameZ.png"
     },
@@ -29,6 +29,78 @@
       "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
       "url": "https://rigan567.github.io/Redux-Cart/",
       "imgSrc": "https://raw.githubusercontent.com/Rigan567/Redux-Cart/master/src/Screenshot%20(234).png"
+    },
+    {
+      "date": "9/2023",
+      "title": "Currency Converter",
+      "description": "Api fetched using html, vanilla CSS & JavaScript",
+      "url": "https://rigan567.github.io/Currency-Converter/",
+      "imgSrc": "https://raw.githubusercontent.com/Rigan567/Currency-Converter/main/Screenshot%20(238).png"
+    },
+    {
+      "date": "8/2023",
+      "title": "Weather App ",
+      "description": " Fetched API for real time data. Used Tech : html, vanilla CSS & JavaScript",
+      "url": "https://rigan567.github.io/Weather-App/",
+      "imgSrc": "https://raw.githubusercontent.com/Rigan567/Weather-App/main/Screenshot%20(235).png"
+    }
+  ],
+  "Skills": [
+    {
+      "name": "JavaScript",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "Java",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+    },
+    {
+      "name": "HTML",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+    },
+    {
+      "name": "CSS",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+    },
+    {
+      "name": "Express",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+    },
+    {
+      "name": "FireBase",
+      "imgSrc": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+    },
+    {
+      "name": "React",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+    },
+    {
+      "name": "Node",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+    },
+    {
+      "name": "MongoDB",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+    },
+    {
+      "name": "MySQL",
+      "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+    },
+    {
+      "name": "git",
+      "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4r8uaRnzhtgiMTa6JzOy0J19engAxESh8N2NZU6nU6w&s"
+    },
+    {
+      "name": "github",
+      "imgSrc": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+    },
+    {
+      "name": "Xampp",
+      "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/d/dc/XAMPP_Logo.png"
+    },
+    {
+      "name": "Postman",
+      "imgSrc": "https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png"
     }
   ]
 }
