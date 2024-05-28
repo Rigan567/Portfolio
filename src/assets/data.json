@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "date": "2/2024",
+      "title": "Netflix Clone",
+      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "url": "https://rigan567.github.io/Netflix/",
+      "imgSrc": "https://raw.githubusercontent.com/Rigan567/Netflix/main/src/img/netflix.png"
+    },
+    {
+      "date": "2/2024",
+      "title": "ChatApp",
+      "description": "Chat-App. Used Tech: ReactJS, Chakra UI , SCSS & Firebase",
+      "url": "https://rigan567.github.io/ChatApp/",
+      "imgSrc": "https://raw.githubusercontent.com/Rigan567/ChatApp/main/src/chatapp.png"
+    },
+
+    {
+      "date": "3/2024",
+      "title": "GameZ",
+      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "url": "https://rigan567.github.io/GameZ/",
+      "imgSrc": "https://raw.githubusercontent.com/Rigan567/GameZ/main/src/assets/gameZ.png"
+    },
+
+    {
+      "date": "3/2024",
+      "title": "Shopping CART",
+      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "url": "https://rigan567.github.io/Redux-Cart/",
+      "imgSrc": "https://raw.githubusercontent.com/Rigan567/Redux-Cart/master/src/Screenshot%20(234).png"
+    }
+  ]
+}
