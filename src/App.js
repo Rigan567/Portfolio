@@ -14,8 +14,9 @@ function App() {
       <Home />
       <Work />
       <Services />
-      <Timeline />
       <Testimonials />
+      <Timeline />
+
       <Contact />
     </>
   );

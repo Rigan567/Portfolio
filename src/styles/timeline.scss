@@ -60,6 +60,7 @@
       background-color: $color5;
       border-radius: 8px;
       color: $color1;
+      filter: drop-shadow(10px 10px 5px $color6);
       &:hover nohover {
         filter: blur(5px);
       }

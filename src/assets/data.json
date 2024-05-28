@@ -102,5 +102,18 @@
       "name": "Postman",
       "imgSrc": "https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png"
     }
+  ],
+  "study": [
+    {
+      "institution": "BRAC University",
+      "grade": "3.46",
+      "years": "Sep 2019- Oct 2023"
+    },
+    { "institution": "Chittagong College", "grade": "5.00", "years": "2018" },
+    {
+      "institution": "Chittagong Collegiate School",
+      "grade": "5.00",
+      "years": "2016"
+    }
   ]
 }
