@@ -1,5 +1,4 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
 
 const Header = () => {
   return (
@@ -12,8 +11,11 @@ const Header = () => {
 const NavContent = () => {
   return (
     <>
-      <h2 style={{ display: "flex" }}>
-        Rigan
+      <img
+        src="https://e0.pxfuel.com/wallpapers/581/334/desktop-wallpaper-cool-for-boys-cool-pics-thumbnail.jpg"
+        alt="Founder"
+      />
+      {/* Rigan
         <Typewriter
           options={{
             strings: [".."],
@@ -23,9 +25,8 @@ const NavContent = () => {
             deleteSpeed: 60,
             cursor: "",
             wrapperClassName: "typewriterpara",
-          }}
-        />
-      </h2>
+          }} */}
+
       <div>
         <a href="#home">Home</a>
         <a href="#works">Portfolio</a>

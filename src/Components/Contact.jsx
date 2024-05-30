@@ -1,16 +1,26 @@
 import React, { useState } from "react";
 import vg from "../assets/vg.png";
 import { motion } from "framer-motion";
+import toast from "react-hot-toast";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../firebase";
 
 const Contact = () => {
+  const [disableBtn, setDisableBtn] = useState(false);
   const animations = {
-    initial: {
-      x: -100,
-      opacity: 0,
+    form: {
+      initial: {
+        x: -100,
+        opacity: 0,
+      },
+      whileInView: {
+        x: 0,
+        opacity: 1,
+      },
     },
-    whileInView: {
-      x: 0,
-      opacity: 1,
+    button: {
+      initial: { y: -150, opacity: 0 },
+      whileInView: { y: -10, opacity: 1 },
     },
     initialAsideView: {
       y: 100,
@@ -21,7 +31,7 @@ const Contact = () => {
       y: 0,
       opacity: 1,
     },
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { duration: 0.5, delay: 0.5, ease: "easeOut" },
   };
 
   const [inputs, setInputs] = useState({ name: "", email: "", message: "" });
@@ -29,18 +39,31 @@ const Contact = () => {
   const changeHandler = (e) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
-    console.log(inputs.name, inputs.email, inputs.message);
+    setDisableBtn(true);
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name: inputs.name,
+        email: inputs.email,
+        message: inputs.message,
+      });
+      setInputs({ name: "", email: "", message: "" });
+      toast.success("Message Sent");
+      setDisableBtn(false);
+    } catch (error) {
+      toast.error("Error");
+      setDisableBtn(false);
+    }
   };
   return (
     <div id="contact">
-      <motion.section
-        whileInView={animations.whileInView}
-        initial={animations.initial}
-        transition={animations.transition}
-      >
-        <form onSubmit={submitHandler}>
+      <section>
+        <motion.form
+          onSubmit={submitHandler}
+          {...animations.form}
+          transition={animations.transition}
+        >
           <h2>Contact Me</h2>
           <input
             type="text"
@@ -66,9 +89,17 @@ const Contact = () => {
             value={inputs.message}
             onChange={changeHandler}
           />
-          <button type="submit"> Send</button>
-        </form>
-      </motion.section>
+          <motion.button
+            className={disableBtn ? "disableBtn" : ""}
+            disabled={disableBtn}
+            {...animations.button}
+            type="submit"
+          >
+            {" "}
+            Send
+          </motion.button>
+        </motion.form>
+      </section>
       <aside>
         <motion.div
           initial={animations.initialAsideView}

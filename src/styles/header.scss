@@ -9,9 +9,19 @@ nav {
   position: sticky;
   top: 0%;
   z-index: 60;
-  > h2 {
-    font-size: 2rem;
+  > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(4px 4px 3px $color5_1);
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.08);
+      filter: drop-shadow(7px 7px 3px $color5_1);
+    }
   }
+
   > div {
     display: flex;
     align-items: center;
