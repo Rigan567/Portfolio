@@ -7,7 +7,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="footer">
       <div>
         <img
           src="https://e0.pxfuel.com/wallpapers/581/334/desktop-wallpaper-cool-for-boys-cool-pics-thumbnail.jpg"

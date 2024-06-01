@@ -14,6 +14,19 @@
     background-color: $color1;
     justify-content: center;
     align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1%;
+
+      border-radius: 90% 0 90% 0;
+      height: 20px;
+      width: 20px;
+      background-color: $color3;
+      z-index: 100;
+      animation: circulate 10s linear infinite;
+    }
     > h2 {
       font: 700 2.5rem $text2;
       text-align: center;

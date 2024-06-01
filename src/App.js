@@ -8,12 +8,29 @@ import Work from "./Components/Work";
 import { Toaster } from "react-hot-toast";
 import "./styles/app.scss";
 import Footer from "./Components/Footer";
+import { useState } from "react";
+import HeaderPhone from "./Components/HeaderPhone";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  // const [ratio, setRatio] = useState(window.innerWidth / window.innerHeight);
+  // console.log(ratio);
+
+  // useEffect(() => {
+  //   const resizeRatio = () => {
+  //     setRatio(window.innerWidth / window.innerHeight);
+  //   };
+  //   window.addEventListener("resize", resizeRatio);
+  //   return () => {
+  //     window.removeEventListener("resize", resizeRatio);
+  //   };
+  // }, [ratio]);
+
   return (
     <>
       <Toaster />
-      <Header />
+      <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
       <Work />
       <Services />

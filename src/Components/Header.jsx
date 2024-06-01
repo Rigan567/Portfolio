@@ -1,40 +1,42 @@
 import React from "react";
+import { RiMenu3Line } from "react-icons/ri";
 
-const Header = () => {
+const Header = ({ menuOpen, setMenuOpen }) => {
   return (
-    <nav>
-      <NavContent />
-    </nav>
+    <>
+      <nav>
+        <NavContent setMenuOpen={setMenuOpen} />
+      </nav>
+      <button className="navMenuOpen" onClick={() => setMenuOpen(!menuOpen)}>
+        <RiMenu3Line />
+      </button>
+    </>
   );
 };
 
-const NavContent = () => {
+export const NavContent = ({ setMenuOpen }) => {
   return (
     <>
-      <img
-        src="https://e0.pxfuel.com/wallpapers/581/334/desktop-wallpaper-cool-for-boys-cool-pics-thumbnail.jpg"
-        alt="Founder"
-      />
-      {/* Rigan
-        <Typewriter
-          options={{
-            strings: [".."],
-            autoStart: true,
-            loop: true,
-            delay: 600,
-            deleteSpeed: 60,
-            cursor: "",
-            wrapperClassName: "typewriterpara",
-          }} */}
-
       <div>
-        <a href="#home">Home</a>
-        <a href="#works">Portfolio</a>
-        <a href="#services">Services</a>
+        <a onClick={() => setMenuOpen(false)} href="#home">
+          Home
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#works">
+          Portfolio
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#services">
+          Services
+        </a>
 
-        <a href="#testimonial">Skills</a>
-        <a href="#timeline">Academia</a>
-        <a href="#contact">Contact</a>
+        <a onClick={() => setMenuOpen(false)} href="#testimonial">
+          Skills
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#timeline">
+          Academia
+        </a>
+        <a onClick={() => setMenuOpen(false)} href="#contact">
+          Contact
+        </a>
       </div>
       <a href="mailto:rigan.paul@g.bracu.ac.bd">
         <button>Email</button>

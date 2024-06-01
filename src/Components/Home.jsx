@@ -5,26 +5,15 @@ import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 import me from "../assets/rig.png";
 
 const Home = () => {
-  const clientCount = useRef(null);
   const projectCount = useRef(null);
-  const animationClientsCount = () => {
-    animate(0, 30, {
-      duration: 0.7,
-      onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
-    });
-  };
-  // const animationProjectsCount = () => {
-  //   animate(0, 20, {
-  //     duration: 0.7,
-  //     onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
-  //   });
-  // };
+
   const animationProjectsCount = () => {
     animate(0, 20, {
       duration: 0.7,
       onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
     });
   };
+
   const animations = {
     h1: {
       initial: {
@@ -55,14 +44,7 @@ const Home = () => {
             Hi, I Am <br /> Rigan Paul
           </motion.h1>
 
-          <motion.h5
-            {...animations.h1}
-            style={{
-              display: "flex",
-              fontSize: "0.9rem",
-              paddingTop: "10px",
-            }}
-          >
+          <motion.h5 {...animations.h1}>
             A &nbsp;
             <Typewriter
               options={{
@@ -81,11 +63,11 @@ const Home = () => {
           </motion.h5>
           <div>
             <a href="mailto:rigan.paul@g.bracu.ac.bd">Hire Me</a>
-            <a href="#Work">
+            <a href="#works">
               Projects <BsArrowUpRight />
             </a>
           </div>
-          <article>
+          {/* <article>
             <p>
               +
               <motion.span
@@ -94,7 +76,7 @@ const Home = () => {
               ></motion.span>
             </p>
             <span>Clients Worldwide</span>
-          </article>
+          </article> */}
 
           <aside>
             <article>
