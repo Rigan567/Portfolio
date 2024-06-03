@@ -33,12 +33,14 @@ const Timeline = () => {
 
   return (
     <div id="timeline">
+      <h2>Academic Qualifications</h2>
       <div className="timelineBox">
         {data.study.map((item, index) => (
           <TimelineItem
             heading={item.institution}
             grade={item.grade}
             years={item.years}
+            program={item.program}
             index={index}
             key={item.institution}
           />
@@ -48,14 +50,15 @@ const Timeline = () => {
   );
 };
 
-const TimelineItem = ({ heading, grade, index, years }) => (
+const TimelineItem = ({ heading, grade, index, years, program }) => (
   <div
     className={`timelineItem ${
       index % 2 === 0 ? "leftTimeline" : "rightTimeline"
     }`}
   >
     <div>
-      <h2>{heading}</h2>
+      <h3>{heading}</h3>
+      <h5>{program}</h5>
       <p>{grade}</p>
       <span>{years}</span>
     </div>

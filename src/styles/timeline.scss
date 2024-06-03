@@ -3,6 +3,14 @@
   height: 100vh;
   background-color: $color1;
 
+  h2 {
+    font: 600 2.5rem $text2;
+    width: fit-content;
+    border-bottom: 5px solid $color5;
+    padding: 0.5rem;
+    margin: auto;
+  }
+
   .timelineBox {
     width: 100%;
     position: relative;
@@ -58,8 +66,10 @@
     > div {
       padding: 20px 30px;
       background-color: $color5;
-      border-radius: 8px;
+      border-radius: 20px 0 20px 0;
       color: $color1;
+      display: flex;
+      flex-direction: column;
       filter: drop-shadow(10px 10px 5px $color6);
       &:hover nohover {
         filter: blur(5px);

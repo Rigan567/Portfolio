@@ -107,13 +107,20 @@
     {
       "institution": "BRAC University",
       "grade": "3.46",
-      "years": "Sep 2019- Oct 2023"
+      "years": "Sep 2019- Oct 2023",
+      "program": "Computer Science & Engineering"
     },
-    { "institution": "Chittagong College", "grade": "5.00", "years": "2018" },
+    {
+      "institution": "Chittagong College",
+      "grade": "5.00",
+      "years": "2018",
+      "program": "Science"
+    },
     {
       "institution": "Chittagong Collegiate School",
       "grade": "5.00",
-      "years": "2016"
+      "years": "2016",
+      "program": "Science"
     }
   ]
 }
