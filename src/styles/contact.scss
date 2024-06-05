@@ -2,9 +2,9 @@
   min-height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-top: 1px solid $color1;
+  border-top: 1px solid var(--color1);
   > section {
-    background-color: $color1;
+    background-color: var(--color1);
     height: 100%;
     width: 100%;
     > form {
@@ -31,15 +31,15 @@
       }
       > button {
         cursor: pointer;
-        background-color: $color3;
-        color: $color4;
+        background-color: var(--color3);
+        color: var(--color4);
         font: 600 1rem $text1;
         text-transform: uppercase;
         border-radius: 50px 0 50px 50px;
         margin: 3rem;
         transition: all 0.5s;
         &:hover {
-          background-color: $color3_1;
+          background-color: var(--color3_1);
         }
       }
     }
@@ -47,7 +47,7 @@
   > aside {
     width: 100%;
     height: 100%;
-    background-color: $color5;
+    background-color: var(--color5);
     display: grid;
     place-items: center;
     img {

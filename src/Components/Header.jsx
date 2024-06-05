@@ -1,5 +1,6 @@
 import React from "react";
 import { RiMenu3Line } from "react-icons/ri";
+import { useTheme } from "../Theme-context";
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -15,6 +16,8 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 };
 
 export const NavContent = ({ setMenuOpen }) => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <>
       <div>
@@ -41,6 +44,16 @@ export const NavContent = ({ setMenuOpen }) => {
       <a href="mailto:rigan.paul@g.bracu.ac.bd">
         <button>Email</button>
       </a>
+      <div className="mode-switch">
+        <label>
+          <input
+            type="checkbox"
+            onChange={toggleTheme}
+            checked={theme === "dark"}
+          />
+          <span className="slider round"></span>
+        </label>
+      </div>
     </>
   );
 };

@@ -5,7 +5,7 @@
   > h2 {
     font: 700 2.5rem $text2;
     width: fit-content;
-    border-bottom: 1px solid $color6_1;
+    border-bottom: 1px solid var(--color6_1);
     padding: 0.5rem;
     margin: auto;
   }
@@ -13,7 +13,7 @@
     margin-top: 4rem;
     width: 100%;
     height: 100%;
-    background-color: $color5;
+    background-color: var(--color5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,17 +27,17 @@
       height: 25vmax;
       width: 95%;
       margin: auto;
-      background-color: $color4;
+      background-color: var(--color4);
       display: flex;
       padding: 2rem;
-      box-shadow: 0 0 20px 5px $color1;
+      box-shadow: 0 0 20px 5px var(--color1);
       > img {
         border-radius: 30px 0 30px 30px;
         width: 50%;
         object-fit: contain;
         padding: 2rems;
         cursor: pointer;
-        filter: drop-shadow(20px 20px 5px $color5);
+        filter: drop-shadow(20px 20px 5px var(--color5));
         transition: all 0.5s;
       }
 
@@ -54,13 +54,13 @@
           margin: 2rem;
         }
         > a {
-          background-color: $color3;
+          background-color: var(--color3);
           padding: 0.7rem 2rem;
           margin: 2rem;
-          color: $color4;
+          color: var(--color4);
           transition: all 0.5s;
           &:hover {
-            background-color: $color3_1;
+            background-color: var(--color3_1);
           }
         }
       }

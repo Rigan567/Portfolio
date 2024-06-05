@@ -10,9 +10,11 @@ import "./styles/app.scss";
 import Footer from "./Components/Footer";
 import { useState } from "react";
 import HeaderPhone from "./Components/HeaderPhone";
+import { ThemeProvider } from "./Theme-context";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   // const [ratio, setRatio] = useState(window.innerWidth / window.innerHeight);
   // console.log(ratio);
 
@@ -28,16 +30,18 @@ function App() {
 
   return (
     <>
-      <Toaster />
-      <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Home />
-      <Work />
-      <Services />
-      <Testimonials />
-      <Timeline />
-      <Contact />
-      <Footer />
+      <ThemeProvider>
+        <Toaster />
+        <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Home />
+        <Work />
+        <Services />
+        <Testimonials />
+        <Timeline />
+        <Contact />
+        <Footer />
+      </ThemeProvider>
     </>
   );
 }

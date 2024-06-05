@@ -1,20 +1,35 @@
 $text1: "Roboto", sans-serif;
 $text2: "Open Sans", sans-serif;
 
-$color1: #fef2f2;
-$color2: #286f6c;
-$color2_1: #174340;
-$color3: #f26440;
-$color3_light: rgb(249, 141, 141);
-$color3_1: #ad4126;
-$color4: #fff;
-$color5: #292b46;
-$color5_1: #292b46ab;
+[data-theme="light"] {
+  --color1: #fef2f2;
+  --color2: #286f6c;
+  --color2_1: #174340;
+  --color3: #f26440;
+  --color3_light: rgb(249, 141, 141);
+  --color3_1: #ad4126;
+  --color4: #fff;
+  --color5: #292b46;
+  --color5_1: #292b46ab;
 
-$color6: #161616;
-$color6_1: #16161698;
-$color6_2: #16161622;
-
+  --color6: #161616;
+  --color6_1: #16161698;
+  --color6_2: #16161622;
+}
+[data-theme="dark"] {
+  --color1: #292b46;
+  --color2: #174340;
+  --color2_1: #286f6c;
+  --color3: #ad4126;
+  --color3_light: rgb(249, 141, 141);
+  --color3_1: #f26440;
+  --color4: #161616;
+  --color5: #fef2f2;
+  --color5_1: #fef2f2ab;
+  --color6: #fff;
+  --color6_1: #16161698;
+  --color6_2: #16161622;
+}
 $p: 13.33vmax;
 $p_md: 7vmax;
 $p_base: 5vmax;

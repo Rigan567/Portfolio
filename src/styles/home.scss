@@ -8,7 +8,7 @@
     &:first-of-type {
       padding-left: $p;
       > div {
-        border-top: 1px solid $color6_2;
+        border-top: 1px solid var(--color6_2);
         height: 100%;
         padding-top: 6rem;
         > h1 {
@@ -32,17 +32,17 @@
           align-items: center;
           > a {
             &:first-of-type {
-              background-color: $color3;
-              color: $color1;
+              background-color: var(--color3);
+              color: var(--color1);
               padding: 1rem 2.5rem;
               transition: all 0.3s;
               &:hover {
-                background-color: $color3_1;
+                background-color: var(--color3_1);
               }
             }
             &:last-of-type {
               font: 600 1.2rem $text2;
-              color: $color5;
+              color: var(--color5);
               display: flex;
               align-items: center;
             }
@@ -56,12 +56,12 @@
         article {
           margin: 2rem 0;
           width: 10rem;
-          color: $color5;
+          color: var(--color5);
           position: relative;
 
           &::after {
             content: "";
-            background-color: $color4;
+            background-color: var(--color4);
             width: 100%;
             height: 5rem;
             position: absolute;
@@ -83,7 +83,7 @@
       }
     }
     &:last-of-type {
-      border-top: 1px solid $color6_2;
+      border-top: 1px solid var(--color6_2);
       // position: relative;
       // top: -15%;
       // right: -5%;
@@ -96,7 +96,7 @@
         content: "";
         width: 40vmax;
         height: 40vmax;
-        background-color: $color3;
+        background-color: var(--color3);
         position: absolute;
         z-index: -1;
         border-radius: 50%;
@@ -111,10 +111,29 @@
   > svg {
     position: absolute;
     font-size: 4rem;
-    color: $color5;
+    color: var(--color5);
     left: 50%;
     bottom: 5%;
     transform: translateX(-50%);
     animation: animateSvg 0.7s infinite linear alternate;
+  }
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(10px 10px 8px var(--color5));
+  > div {
+    width: 75%;
+    margin-top: 10vmax;
+    padding: $p_base;
+    border-radius: 40px 10px 40px 40px;
+    background-color: var(--color4);
+    > p {
+      word-spacing: 4px;
+      font: 400 1.2rem $text2;
+      letter-spacing: 3px;
+      font-family: $text2;
+    }
   }
 }

@@ -28,12 +28,24 @@ a {
 }
 
 body {
-  background-color: $color1;
+  background-color: var(--color1);
   overflow-x: hidden;
 }
 
 .disableBtn {
-  color: $color6;
+  color: var(--color6);
   background-color: rgb(237, 237, 237) !important;
   cursor: not-allowed !important;
+}
+
+.toggleBtn {
+  background-color: var(--color3);
+  color: var(--color4);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 1rem;
+  &:hover {
+    background-color: var(--color3_light);
+  }
 }
