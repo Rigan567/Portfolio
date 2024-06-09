@@ -22,7 +22,7 @@
     justify-content: center;
     height: 100%;
     position: relative;
-    left: -5% !important;
+    // left: -5% !important;
     &::after {
       content: "";
       position: absolute;
@@ -40,7 +40,7 @@
     // margin: 0 1.5rem;
     position: relative;
     background-color: inherit;
-    width: 100%;
+    width: 50%;
     z-index: 100;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;

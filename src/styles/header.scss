@@ -17,14 +17,24 @@ nav {
     align-items: center;
     width: 50%;
     gap: 2rem;
+
+    &:first-child {
+      cursor: pointer !important;
+    }
     a {
+      height: 30px;
+
       color: var(--color5);
-      font-weight: 500;
+      font-weight: 600;
       transition: all 0.3s;
       letter-spacing: 1px;
-      cursor: pointer;
+      cursor: pointer !important;
+      // border: 2px solid red;
+
       &:hover {
-        color: var(--color3);
+        color: var(--color3) !important;
+        border-bottom: 1px solid var(--color3);
+        transform: translateY(-1.2px);
       }
     }
   }
