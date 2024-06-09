@@ -346,11 +346,12 @@
 @media screen and (max-width: 450px) {
   .navMenuOpen {
     position: fixed !important;
-    left: 40%;
+    left: 38%;
   }
   .navPhone {
-    width: 50% !important;
+    width: 44% !important;
   }
+
   #home {
     height: unset !important;
     flex-direction: column-reverse !important;
@@ -564,7 +565,7 @@
     position: relative;
     // left: 50vmax;
     > section {
-      width: 110% !important;
+      width: 100% !important;
       > form {
         position: relative;
         left: -26%;
@@ -575,22 +576,29 @@
       display: none !important;
     }
   }
-  footer {
-  }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 362px) {
+  nav {
+    position: relative !important;
+    left: -1% !important;
+    width: 100% !important;
+  }
   .navMenuOpen {
     position: fixed !important;
-    left: 35%;
+    left: 42%;
   }
   .navPhone {
-    width: 45% !important;
+    width: 55% !important;
+    height: unset;
   }
+  .mode-switch {
+    left: -20% !important;
+  }
+
   #home {
     height: unset !important;
     flex-direction: column-reverse !important;
-    // width: 145vmax !important;
 
     > section {
       &:first-of-type {
@@ -603,7 +611,7 @@
           border: none !important;
           padding-top: 3rem !important;
           position: relative;
-          left: -20%;
+          left: -11%;
           > h1 {
             font: 900 2.5rem $text1;
             position: relative;
@@ -611,7 +619,6 @@
           > h5 {
             padding-top: 1.3rem !important;
             position: relative;
-            left: 11%;
             font-size: 0.9rem !important;
             height: 2rem;
 
@@ -620,12 +627,16 @@
               letter-spacing: 1px;
             }
           }
+          > div {
+            position: relative;
+            left: -3% !important;
+          }
 
           aside {
             align-items: center;
             > article {
               position: relative;
-              left: 10%;
+              left: 20%;
             }
           }
 
@@ -634,7 +645,7 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            left: 14%;
+            left: 20%;
             span {
               display: block;
               width: 80%;
@@ -657,6 +668,7 @@
 
       &:last-of-type {
         border: none !important;
+        left: 5%;
       }
     }
 
@@ -669,9 +681,11 @@
   .description {
     > div {
       padding: 30px $p_sm !important;
+      position: relative;
+      left: 6px;
       > p {
-        letter-spacing: 0px !important;
-        font-weight: 400 !important;
+        letter-spacing: 1px !important;
+        font-weight: 500 !important;
         font-size: 1.1rem !important;
       }
     }
@@ -679,13 +693,16 @@
 
   #works {
     padding-left: $p_zero !important;
+    height: unset !important;
+    // width: 130% !important;
 
     h2 {
       position: relative;
-      left: 20%;
     }
     > section {
-      width: 142% !important;
+      width: 450px !important;
+      position: relative;
+      left: 0%;
       > article {
         height: 15vmax !important;
         width: 100% !important;
@@ -693,16 +710,16 @@
         bottom: 30%;
 
         .workItem {
-          padding: 5vmax !important;
+          padding: 10vmax !important;
           position: relative;
-          // left: -5%;
+          left: -10%;
           height: 50vmax !important;
           box-shadow: 0 0 5px var(--color1) !important;
           // flex-direction: row !important;
 
           > img {
             object-fit: contain !important;
-            width: 80%;
+            width: 70%;
             margin-top: 1rem;
           }
 
@@ -736,7 +753,11 @@
 
   #services {
     height: unset !important;
-    width: 105% !important;
+    width: 500px !important;
+    > h2 {
+      position: relative;
+      left: -20%;
+    }
 
     > section {
       margin: 3rem -0.8rem !important;
@@ -749,16 +770,19 @@
       }
       .serviceBox4 {
         grid-column: 1/3 !important;
+        grid-row: unset !important;
       }
     }
   }
   #testimonial {
     padding: $p_base $p_zero !important;
+    // width: 130% !important;
     > section {
       height: unset !important;
 
       justify-content: space-evenly;
       position: relative;
+      // left: 5%;
 
       > .skillbox {
         width: 100% !important;
@@ -767,7 +791,7 @@
 
         > .cards {
           height: 100% !important;
-          width: 120% !important;
+          width: 115% !important;
           > img {
             width: 120% !important;
             height: 120% !important;
@@ -780,6 +804,7 @@
 
   #timeline {
     height: unset !important;
+    // width: 130% !important;
     > h2 {
       font: 600 1.5rem $text2 !important;
       width: fit-content;
@@ -811,14 +836,25 @@
 
   #contact {
     grid-template-columns: 1fr;
-    position: relative;
-    left: 10px;
+
     > section {
-      width: 110% !important;
+      // width: 110% !important;
       > form {
         position: relative;
-        left: -26%;
-        width: 100vmax !important;
+        // left: -26%;
+        // width: 100vmax !important;
+        > h2 {
+          position: relative;
+          left: 2%;
+        }
+        > input {
+          position: relative;
+          left: 2%;
+        }
+        > button {
+          position: relative;
+          left: 2%;
+        }
       }
     }
     > aside {
@@ -826,5 +862,9 @@
     }
   }
   footer {
+    > div {
+      position: relative;
+      left: 2%;
+    }
   }
 }

@@ -2,6 +2,7 @@
   width: 100%;
   height: 90vh;
   display: flex;
+  color: var(--color5);
 
   > section {
     width: 100%;
@@ -33,7 +34,7 @@
           > a {
             &:first-of-type {
               background-color: var(--color3);
-              color: var(--color1);
+              color: var(--color5);
               padding: 1rem 2.5rem;
               transition: all 0.3s;
               &:hover {
@@ -42,9 +43,13 @@
             }
             &:last-of-type {
               font: 600 1.2rem $text2;
-              color: var(--color5);
+              color: var(--color5_1);
               display: flex;
               align-items: center;
+              transition: all 0.5s;
+              &:hover {
+                color: var(--color5);
+              }
             }
           }
         }
@@ -62,11 +67,11 @@
           &::after {
             content: "";
             background-color: var(--color4);
-            width: 100%;
+            width: 110%;
             height: 5rem;
             position: absolute;
-            top: 20%;
-            left: 20%;
+            top: 0%;
+            left: -10%;
             z-index: -1;
             border-radius: 50px;
           }
@@ -122,18 +127,29 @@
 .description {
   display: flex;
   justify-content: center;
-  filter: drop-shadow(10px 10px 8px var(--color5));
+
   > div {
     width: 75%;
     margin-top: 10vmax;
     padding: $p_base;
     border-radius: 40px 10px 40px 40px;
-    background-color: var(--color4);
+    background-color: var(--color7);
+    filter: drop-shadow(8px 8px 7px var(--color12));
+    transition: all 0.5s;
+    animation: footersvg 3s infinite linear alternate;
+    cursor: pointer;
+    &:hover {
+      border-right: 0.5px solid white;
+      border-bottom: 1px solid white;
+      filter: drop-shadow(10px 10px 8px var(--color12));
+      transform: translateY(-5px);
+    }
     > p {
       word-spacing: 4px;
       font: 400 1.2rem $text2;
       letter-spacing: 3px;
       font-family: $text2;
+      color: var(--color8);
     }
   }
 }

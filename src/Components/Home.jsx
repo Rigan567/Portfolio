@@ -81,16 +81,6 @@ const Home = () => {
                 Projects <BsArrowUpRight />
               </a>
             </div>
-            {/* <article>
-            <p>
-              +
-              <motion.span
-                whileInView={animationClientsCount}
-                ref={clientCount}
-              ></motion.span>
-            </p>
-            <span>Clients Worldwide</span>
-          </article> */}
 
             <aside>
               <article>

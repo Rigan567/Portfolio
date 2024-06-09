@@ -11,24 +11,41 @@ $text2: "Open Sans", sans-serif;
   --color4: #fff;
   --color5: #292b46;
   --color5_1: #292b46ab;
-
   --color6: #161616;
   --color6_1: #16161698;
   --color6_2: #16161622;
+  --color7: #292b46;
+  --color7_1: #fef2f2;
+  --color8: #fff;
+  --color9: #292b46;
+  --color10: #1a1a1a;
+  --color11: #292b46;
+  --color12: #161616;
+  --color13: #fef2f2;
+  --color14: #161616;
 }
 [data-theme="dark"] {
-  --color1: #292b46;
-  --color2: #174340;
-  --color2_1: #286f6c;
-  --color3: #ad4126;
-  --color3_light: rgb(249, 141, 141);
-  --color3_1: #f26440;
-  --color4: #161616;
-  --color5: #fef2f2;
-  --color5_1: #fef2f2ab;
-  --color6: #fff;
-  --color6_1: #16161698;
-  --color6_2: #16161622;
+  --color1: #15202b; // Dark background color
+  --color2: #286f6c; // Accent color (can remain the same as light theme for consistency)
+  --color2_1: #174340; // Darker accent color (can remain the same)
+  --color3: #8a099b; // Highlight color (adjusted to a more vibrant color for dark mode)
+  --color3_light: #b540b3; // Lighter highlight color
+  --color3_1: #6b0e77; // Darker highlight color
+  --color4: #1a1a1a; // Very dark background color
+  --color5: #fef2f2; // Light text color
+  --color5_1: #d4d4d4; // Muted light text color
+  --color6: #2b2b2b; // Secondary dark background color
+  --color6_1: #3b3b3b; // Muted secondary dark background
+  --color6_2: #4b4b4b; // Very muted secondary dark background
+  --color7: #0e2b47;
+  --color7_1: #0e2b47;
+  --color8: #fff;
+  --color9: #15202b;
+  --color10: #fff;
+  --color11: #fef2f2;
+  --color12: #1a1a1a;
+  --color13: #fef2f2;
+  --color14: #8a099b;
 }
 $p: 13.33vmax;
 $p_md: 7vmax;

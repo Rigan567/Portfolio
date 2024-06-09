@@ -56,7 +56,7 @@ const TimelineItem = ({ heading, grade, index, years, program }) => (
       index % 2 === 0 ? "leftTimeline" : "rightTimeline"
     }`}
   >
-    <div>
+    <div className="timelineItem_content">
       <h3>{heading}</h3>
       <h5>{program}</h5>
       <p>{grade}</p>

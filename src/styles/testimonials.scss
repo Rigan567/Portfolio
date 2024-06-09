@@ -2,16 +2,15 @@
   height: 100%;
   width: 100%;
   padding: $p_base;
-  background-color: var(--color5);
+  background-color: var(--color9);
   color: var(--color5);
 
   > section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
     padding: 2rem;
-    background-color: var(--color1);
+    background-color: var(--color7_1);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -31,10 +30,10 @@
       font: 700 2.5rem $text2;
       text-align: center;
       margin-bottom: 4rem;
+      color: var(--color10);
     }
     > .skillbox {
       padding: 10px;
-
       width: 100%;
       margin: 3rem;
       display: grid;
@@ -48,16 +47,19 @@
         justify-content: center; /* Centers img horizontally */
         align-items: center; /* Centers img vertically */
         width: 100%;
-        filter: drop-shadow(6px 3px 2px var(--color5));
+
+        // border-right: 1px solid var(--color7_1);
+        filter: drop-shadow(6px 3px 2px black);
+
         transition: transform 0.3s ease, filter 0.3s ease;
         cursor: pointer;
         &:hover {
-          transform: scale(1.5);
-          filter: drop-shadow(10px 5px 4px var(--color5));
+          transform: scale(1.08) !important;
+          filter: drop-shadow(10px 5px 4px black);
         }
         > img {
           // border: 1px solid black;
-          background-color: var(--color4);
+          background-color: var(--color8);
           padding: 1.8rem;
           width: 150px;
           height: 150px;

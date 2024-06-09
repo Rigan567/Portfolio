@@ -1,7 +1,7 @@
 footer {
   min-height: 100px;
-  background-color: var(--color6);
-  color: var(--color4);
+  background-color: var(--color12);
+  color: var(--color8);
   padding: 6rem 0;
   padding-left: $p;
   display: grid;
@@ -11,8 +11,8 @@ footer {
   text-align: center;
   > div {
     width: 100%;
-    border-left: 2px solid var(--color4);
-    border-right: 2px solid var(--color4);
+    border-left: 2px solid var(--color8);
+    border-right: 2px solid var(--color8);
     img {
       width: 100px;
       height: 100px;
@@ -35,7 +35,7 @@ footer {
       gap: 1.2rem;
       svg {
         font-size: 2rem;
-        color: var(--color4);
+        color: var(--color8);
         &:hover {
           color: var(--color3);
         }
@@ -45,10 +45,11 @@ footer {
   > a {
     width: 50px;
     height: 50px;
-    background-color: var(--color4);
+    background-color: var(--color8);
     border-radius: 50%;
     display: grid;
     place-items: center;
+    animation: footersvg 1.5s infinite linear alternate;
     svg {
       font-size: 2rem;
       color: var(--color3);
