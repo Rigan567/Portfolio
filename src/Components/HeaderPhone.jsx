@@ -1,6 +1,5 @@
 import React from "react";
 import { NavContent } from "./Header";
-// import {menuOpen} from
 
 const HeaderPhone = ({ menuOpen, setMenuOpen }) => {
   return (

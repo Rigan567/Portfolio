@@ -21,6 +21,8 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    position: relative;
+    left: -5% !important;
     &::after {
       content: "";
       position: absolute;
@@ -35,9 +37,11 @@
   }
   .timelineItem {
     padding: 1rem 3rem;
+    // margin: 0 1.5rem;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 100%;
+    z-index: 100;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
 
