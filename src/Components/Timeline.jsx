@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../assets/data.json";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Timeline = () => {
   useEffect(() => {
@@ -50,18 +51,38 @@ const Timeline = () => {
   );
 };
 
-const TimelineItem = ({ heading, grade, index, years, program }) => (
-  <div
-    className={`timelineItem ${
-      index % 2 === 0 ? "leftTimeline" : "rightTimeline"
-    }`}
-  >
-    <div className="timelineItem_content">
-      <h3>{heading}</h3>
-      <h5>{program}</h5>
-      <p>{grade}</p>
-      <span>{years}</span>
+const TimelineItem = ({ heading, grade, index, years, program }) => {
+  const animation = {
+    initial:
+      index % 2 === 0
+        ? {
+            x: "-100%",
+            opacity: 0,
+          }
+        : { x: "100%", opacity: 0 },
+    whileInView: {
+      x: 0,
+      opacity: 1,
+    },
+  };
+
+  return (
+    <div
+      className={`timelineItem ${
+        index % 2 === 0 ? "leftTimeline" : "rightTimeline"
+      }`}
+    >
+      <motion.div
+        className="timelineItem_content"
+        initial={animation.initial}
+        whileInView={animation.whileInView}
+      >
+        <h3>{heading}</h3>
+        <h5>{program}</h5>
+        <p>{grade}</p>
+        <span>{years}</span>
+      </motion.div>
     </div>
-  </div>
-);
+  );
+};
 export default Timeline;

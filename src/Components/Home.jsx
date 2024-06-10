@@ -3,6 +3,7 @@ import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 import me from "../assets/rig.png";
+import { FaDownload } from "react-icons/fa6";
 
 const Home = () => {
   const projectCount = useRef(null);
@@ -58,14 +59,13 @@ const Home = () => {
             </motion.h1>
 
             <motion.h5 {...animations.h1}>
-              A &nbsp;
               <Typewriter
                 options={{
                   strings: [
-                    "Researcher",
-                    "Web Developer",
-                    "React Developer",
-                    "MERN Stack Developer",
+                    " A Researcher",
+                    " A Web Developer",
+                    " A React Developer",
+                    " A MERN Stack Developer",
                   ],
                   autoStart: true,
                   loop: true,
@@ -76,7 +76,14 @@ const Home = () => {
               />
             </motion.h5>
             <div>
-              <a href="mailto:rigan.paul@g.bracu.ac.bd">Hire Me</a>
+              <a
+                href="https://www.dropbox.com/scl/fi/8z0f2giqj7mffw20zpc0l/Rigan-Resume.pdf?rlkey=cc6ix0gx49gc3rymje6f4i7p6&st=rs730b8y&dl=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+                <FaDownload />
+              </a>
               <a href="#works">
                 Projects <BsArrowUpRight />
               </a>

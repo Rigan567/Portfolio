@@ -578,7 +578,7 @@
   }
 }
 
-@media screen and (max-width: 362px) {
+@media screen and (max-width: 365px) {
   nav {
     position: relative !important;
     left: -1% !important;
@@ -613,7 +613,7 @@
           border: none !important;
           padding-top: 3rem !important;
           position: relative;
-          left: -20%;
+          // left: -20%;
           > h1 {
             font: 900 2.5rem $text1;
             position: relative;
@@ -630,8 +630,13 @@
             }
           }
           > div {
-            position: relative;
-            left: -5% !important;
+            > a {
+              &:first-of-type {
+                > svg {
+                  left: -5% !important;
+                }
+              }
+            }
           }
 
           aside {
@@ -670,7 +675,7 @@
 
       &:last-of-type {
         border: none !important;
-        left: 2%;
+        // left: 2%;
       }
     }
 
@@ -688,7 +693,7 @@
       > p {
         letter-spacing: 1px !important;
         font-weight: 500 !important;
-        font-size: 1.1rem !important;
+        // font-size: 0.5rem !important;
       }
     }
   }
@@ -833,12 +838,12 @@
       width: 87% !important;
 
       &::after {
-        left: 55% !important;
+        left: 50% !important;
       }
       > .timelineItem {
         padding: 2rem 1rem !important;
         width: 100%;
-        left: 5%;
+        left: 0%;
         text-align: center !important;
         animation: upanddown 3s infinite linear alternate;
 
@@ -869,14 +874,14 @@
       // width: 110% !important;
       > form {
         position: relative;
-        // left: -25% !important;
+        left: -27% !important;
         // width: 100vmax !important;
         > h2 {
-          font-size: 2.1rem !important;
+          // font-size: 2.1rem !important;
         }
         > input {
           padding: 0.5rem 1.5rem !important;
-          width: 35% !important;
+          width: 40% !important;
         }
         > button {
           width: 30% !important;

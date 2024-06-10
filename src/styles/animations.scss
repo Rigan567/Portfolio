@@ -16,12 +16,21 @@
   }
 }
 
+@keyframes downloadsvg {
+  0% {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
 @keyframes footersvg {
   50% {
     transform: translateY(-10px);
   }
   to {
-    transform: translateY(0px);
+    transform: translateY(5px);
   }
 }
 

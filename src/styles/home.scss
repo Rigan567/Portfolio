@@ -19,10 +19,11 @@
           display: flex;
           font-size: 0.9rem;
           padding-top: 10px;
+          height: 50px;
         }
         .typewriterpara {
           margin: 20px 0;
-          letter-spacing: 3px;
+          letter-spacing: 1px;
           font-size: 0.9rem;
         }
         > div {
@@ -35,10 +36,20 @@
             &:first-of-type {
               background-color: var(--color3);
               color: var(--color5);
-              padding: 1rem 2.5rem;
+              font-weight: 500;
+              padding: 0.8rem 1.2rem;
+              border-radius: 30px;
               transition: all 0.3s;
               &:hover {
                 background-color: var(--color3_1);
+                color: var(--color8);
+              }
+              > svg {
+                font-size: 1.5rem;
+                text-align: center;
+                position: relative;
+                margin-left: 8px;
+                animation: downloadsvg 0.8s infinite linear alternate;
               }
             }
             &:last-of-type {
