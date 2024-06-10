@@ -89,6 +89,21 @@
 
   #works {
     padding: 8rem $p_base;
+    article {
+      height: 60% !important;
+
+      .workItem {
+        height: 100% !important;
+        padding: 50px;
+        aside {
+          > p {
+            letter-spacing: 1px !important;
+            line-height: 100% !important;
+            margin: 1rem !important;
+          }
+        }
+      }
+    }
   }
 
   #services {
@@ -260,15 +275,15 @@
         margin-top: 8rem;
 
         .workItem {
-          height: 90% !important;
+          height: 70% !important;
           display: flex !important;
           flex-direction: column !important;
           justify-content: center;
           align-items: center;
-          padding: 2rem !important;
+          padding: 1.5rem !important;
           > img {
             object-fit: contain;
-            width: 100%;
+            width: 80%;
             margin-top: 5rem;
           }
           > aside {
@@ -288,8 +303,10 @@
 
   #services {
     padding: $p_sm_inverse;
-
     height: 90vh;
+    > h2 {
+      color: var(--color8);
+    }
     > section > div {
       position: relative;
       left: -80px;
@@ -440,7 +457,7 @@
     > section {
       width: 142% !important;
       > article {
-        height: 15vmax !important;
+        height: 10vmax !important;
         width: 100% !important;
         position: relative;
         bottom: 30%;
@@ -489,9 +506,10 @@
 
   #services {
     height: unset !important;
+    margin-top: 200px;
 
     > section {
-      margin: 3rem -0.5rem !important;
+      margin: 5rem -1rem !important;
       grid-template-columns: repeat(2, 1fr) !important;
       gap: 1rem !important;
 

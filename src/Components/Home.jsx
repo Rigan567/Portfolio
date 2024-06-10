@@ -48,17 +48,33 @@ const Home = () => {
         opacity: 1,
       },
     },
+    img: {
+      initial: {
+        x: "100%",
+        opacity: 0,
+      },
+      whileInView: {
+        x: 0,
+        opacity: 1,
+      },
+    },
   };
   return (
     <>
       <div id="home">
         <section>
           <div>
-            <motion.h1 {...animations.h1}>
+            <motion.h1
+              {...animations.h1}
+              transition={({ delay: 0.3 }, { duration: 0.6 })}
+            >
               Hi, I Am <br /> Rigan Paul
             </motion.h1>
 
-            <motion.h5 {...animations.h1}>
+            <motion.h5
+              {...animations.h1}
+              transition={({ delay: 0.3 }, { duration: 0.6 })}
+            >
               <Typewriter
                 options={{
                   strings: [
@@ -75,7 +91,10 @@ const Home = () => {
                 }}
               />
             </motion.h5>
-            <div>
+            <motion.div
+              {...animations.h1}
+              transition={({ delay: 0.3 }, { duration: 0.6 })}
+            >
               <a
                 href="https://www.dropbox.com/scl/fi/8z0f2giqj7mffw20zpc0l/Rigan-Resume.pdf?rlkey=cc6ix0gx49gc3rymje6f4i7p6&st=rs730b8y&dl=0"
                 target="_blank"
@@ -87,13 +106,17 @@ const Home = () => {
               <a href="#works">
                 Projects <BsArrowUpRight />
               </a>
-            </div>
+            </motion.div>
 
-            <aside>
+            <motion.aside
+              {...animations.h1}
+              transition={({ delay: 0.3 }, { duration: 0.6 })}
+            >
               <article>
                 <p>
                   +
                   <motion.span
+                    transition={({ delay: 4 }, { duration: 2 })}
                     ref={projectCount}
                     whileInView={animationProjectsCount}
                   ></motion.span>
@@ -104,18 +127,21 @@ const Home = () => {
                 <p>Contact</p>
                 <span>rigan.paul@g.bracu.ac.bd</span>
               </article>
-            </aside>
+            </motion.aside>
           </div>
         </section>
-        <section>
+        <motion.section
+          {...animations.img}
+          transition={({ delay: 0.3 }, { duration: 0.6 })}
+        >
           <img src={me} alt="Rigan" />
-        </section>
+        </motion.section>
         <BsChevronDown />
       </div>
       <motion.div
         className="description"
         {...animations.div}
-        transition={{ duration: 0.8 }}
+        transition={({ delay: 0.3 }, { duration: 0.6 })}
       >
         <div>
           <p>
