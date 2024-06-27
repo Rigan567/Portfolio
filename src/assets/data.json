@@ -26,7 +26,7 @@
     {
       "date": "3/2024",
       "title": "Shopping CART",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "description": "Fetched api for products and used Redux for creating cart system",
       "url": "https://shopcartrig.netlify.app/",
       "imgSrc": "https://raw.githubusercontent.com/Rigan567/Redux-Cart/master/src/Screenshot%20(234).png"
     },
