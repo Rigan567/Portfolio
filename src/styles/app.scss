@@ -6,7 +6,7 @@
 @import "mediaqueries";
 @import "header";
 @import "headerphone";
-
+@import "switch";
 @import "home";
 @import "work";
 @import "timeline";
@@ -28,6 +28,8 @@ a {
 }
 
 body {
+  min-width: 300px;
+  max-width: 100%;
   background-color: var(--color1);
   overflow-x: hidden;
 }

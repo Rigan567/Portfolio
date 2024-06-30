@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { AiFillIeCircle, AiFillAndroid, AiFillWindows } from "react-icons/ai";
+import {} from "react-icons/ai";
+import { FaReact } from "react-icons/fa";
 
 const Services = () => {
   const animations = {
@@ -41,8 +42,8 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.twoAndThree}
         >
-          <AiFillIeCircle />
-          <span>Web Development</span>
+          <FaReact />
+          <span>HTML,CSS & Javascript Development</span>
         </motion.div>
 
         <motion.div
@@ -51,16 +52,16 @@ const Services = () => {
           initial={animations.twoAndThree}
           transition={{ delay: 0.2 }}
         >
-          <AiFillAndroid />
-          <span>App Development</span>
+          <FaReact />
+          <span>Frontend Development</span>
         </motion.div>
         <motion.div
           className="serviceBox4"
           whileInView={animations.whileInView}
           initial={animations.four}
         >
-          <AiFillWindows />
-          <span>Desktop Development</span>
+          <FaReact />
+          <span>MERN Stack Development</span>
         </motion.div>
       </section>
     </div>

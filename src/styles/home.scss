@@ -115,7 +115,8 @@
         background-color: var(--color3);
         position: absolute;
         z-index: -1;
-        border-radius: 50%;
+        // border-radius: 50% 80% 30% 50%;
+        animation: borderplay 4s infinite linear alternate;
       }
       > img {
         width: 40vmax;

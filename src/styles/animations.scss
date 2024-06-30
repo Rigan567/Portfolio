@@ -4,6 +4,15 @@
   }
 }
 
+@keyframes borderplay {
+  from {
+    border-radius: 50% 80% 30% 60%;
+  }
+  to {
+    border-radius: 70% 30% 40% 30%;
+  }
+}
+
 @keyframes upanddown {
   to {
     transform: translateY(-25px);

@@ -1,26 +1,25 @@
 import React from "react";
 import { RiMenu3Line } from "react-icons/ri";
-import { useTheme } from "../Theme-context";
+import Switch from "./Switch";
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   return (
     <>
       <nav>
+        <Switch />
         <NavContent setMenuOpen={setMenuOpen} />
+        <button className="navMenuOpen" onClick={() => setMenuOpen(!menuOpen)}>
+          <RiMenu3Line />
+        </button>
       </nav>
-      <button className="navMenuOpen" onClick={() => setMenuOpen(!menuOpen)}>
-        <RiMenu3Line />
-      </button>
     </>
   );
 };
 
 export const NavContent = ({ setMenuOpen }) => {
-  const { theme, toggleTheme } = useTheme();
-
   return (
     <>
-      <div>
+      <div className="nav_div">
         <a onClick={() => setMenuOpen(false)} href="#home">
           Home
         </a>
@@ -44,16 +43,6 @@ export const NavContent = ({ setMenuOpen }) => {
       <a href="mailto:rigan.paul@g.bracu.ac.bd">
         <button>Email</button>
       </a>
-      <div className="mode-switch">
-        <label>
-          <input
-            type="checkbox"
-            onChange={toggleTheme}
-            checked={theme === "dark"}
-          />
-          <span className="slider round"></span>
-        </label>
-      </div>
     </>
   );
 };
