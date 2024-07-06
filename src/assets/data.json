@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "date": "7/2024",
+      "title": "The Cozy Cup",
+      "description": "A frontend focused coffee shop UI with custom fetched api .. used tech React, Redux and Scss ",
+      "url": "https://thecozycup.netlify.app/",
+      "imgSrc": "https://raw.githubusercontent.com/Rigan567/Cozy-Cup/main/src/assets/images/Screenshot%20(248).png"
+    },
+    {
       "date": "2/2024",
       "title": "Netflix Clone",
       "description": "A frontend clone of Netflix home page UI with responsive design. Used tech ReactJS & SCSS.",
