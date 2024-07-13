@@ -8,12 +8,14 @@ import Work from "./Components/Work";
 import { Toaster } from "react-hot-toast";
 import "./styles/app.scss";
 import Footer from "./Components/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HeaderPhone from "./Components/HeaderPhone";
 import { ThemeProvider } from "./Theme-context";
+import Preloader from "./Components/Preloader";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   // const [ratio, setRatio] = useState(window.innerWidth / window.innerHeight);
   // console.log(ratio);
@@ -27,21 +29,31 @@ function App() {
   //     window.removeEventListener("resize", resizeRatio);
   //   };
   // }, [ratio]);
+  useEffect(() => {
+    // Simulate a loading delay
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // 3 seconds delay for demonstration
+  }, []);
 
   return (
     <>
-      <ThemeProvider>
-        <Toaster />
-        <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Home />
-        <Work />
-        <Services />
-        <Testimonials />
-        <Timeline />
-        <Contact />
-        <Footer />
-      </ThemeProvider>
+      {loading ? (
+        <Preloader />
+      ) : (
+        <ThemeProvider>
+          <Toaster />
+          <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <Home />
+          <Work />
+          <Services />
+          <Testimonials />
+          <Timeline />
+          <Contact />
+          <Footer />
+        </ThemeProvider>
+      )}
     </>
   );
 }

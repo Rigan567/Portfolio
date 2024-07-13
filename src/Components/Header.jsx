@@ -8,7 +8,13 @@ const Header = ({ menuOpen, setMenuOpen }) => {
       <nav>
         <Switch />
         <NavContent setMenuOpen={setMenuOpen} />
-        <button className="navMenuOpen" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="navMenuOpen"
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+            // console.log(menuOpen);
+          }}
+        >
           <RiMenu3Line />
         </button>
       </nav>
