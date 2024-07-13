@@ -515,17 +515,9 @@
 
 @media screen and (max-width: 450px) {
   .navPhone {
-    width: 44% !important;
+    // width: 44% !important;
+    left: 140px !important;
   }
-  // .navMenuOpen {
-  //   border: 2px solid white !important;
-  //   display: inline !important;
-  //   z-index: 200 !important;
-
-  //   position: relative;
-  //   right: 40%;
-  //   cursor: pointer !important;
-  // }
 
   #home {
     height: unset !important;
@@ -761,7 +753,7 @@
 }
 @media screen and (max-width: 432px) {
   .navPhone {
-    width: 44% !important;
+    // width: 44% !important;
   }
 
   #home {
@@ -1010,12 +1002,8 @@
     }
   }
 
-  .navPhone {
-    width: 50% !important;
-    height: unset;
-    position: relative;
-    left: -30px !important;
-  }
+  // .navPhone {
+  // }
 
   #home {
     height: unset !important;
