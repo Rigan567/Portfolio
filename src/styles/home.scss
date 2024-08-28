@@ -5,6 +5,7 @@
   color: var(--color5);
 
   > section {
+    margin-top: 50px;
     width: 100%;
     &:first-of-type {
       padding-left: $p;
@@ -14,6 +15,11 @@
         padding-top: 6rem;
         > h1 {
           font: 900 4rem $text1;
+          > div {
+            background: linear-gradient(90deg, #1e65c2, #608bac);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
         }
         > h5 {
           display: flex;
@@ -100,6 +106,8 @@
     }
     &:last-of-type {
       border-top: 1px solid var(--color6_2);
+      // border: 2px solid white;
+      height: 90%;
       // position: relative;
       // top: -15%;
       // right: -5%;
@@ -110,8 +118,8 @@
       overflow-x: hidden;
       &::after {
         content: "";
-        width: 40vmax;
-        height: 40vmax;
+        width: 35vmax;
+        height: 35vmax;
         background-color: var(--color3);
         position: absolute;
         z-index: -1;
@@ -119,9 +127,9 @@
         animation: borderplay 4s infinite linear alternate;
       }
       > img {
-        width: 40vmax;
-        height: 40vmax;
-        object-fit: contain;
+        width: 32vmax;
+        height: 32vmax;
+        object-fit: cover;
       }
     }
   }

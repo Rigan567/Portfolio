@@ -34,7 +34,7 @@
       }
       > svg {
         color: var(--color7);
-        font-size: 3rem;
+        font-size: 4rem;
       }
       > span {
         font: 900 1rem $text2;
@@ -55,8 +55,23 @@
         letter-spacing: 3px;
       }
     }
+    .serviceBox2 {
+      > img {
+        height: 30%;
+        width: 50%;
+        object-fit: contain;
+      }
+    }
     .serviceBox4 {
       grid-column: 2/4;
+
+      > img {
+        height: 50%;
+        width: 50%;
+        object-fit: contain;
+        filter: grayscale(50%);
+        transform: rotate(-45deg);
+      }
     }
   }
 }

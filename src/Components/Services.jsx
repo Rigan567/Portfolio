@@ -1,7 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 import {} from "react-icons/ai";
 import { FaReact } from "react-icons/fa";
+import webimg from "../assets/webdev.png";
+import mernimg from "../assets/mern.png";
 
 const Services = () => {
   const animations = {
@@ -42,7 +44,7 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.twoAndThree}
         >
-          <FaReact />
+          <img src={webimg} />
           <span>HTML,CSS & Javascript Development</span>
         </motion.div>
 
@@ -60,7 +62,7 @@ const Services = () => {
           whileInView={animations.whileInView}
           initial={animations.four}
         >
-          <FaReact />
+          <img src={mernimg} />
           <span>MERN Stack Development</span>
         </motion.div>
       </section>

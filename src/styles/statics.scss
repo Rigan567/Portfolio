@@ -25,10 +25,12 @@ $text2: "Open Sans", sans-serif;
   --color14: #161616;
 }
 [data-theme="dark"] {
-  --color1: #15202b; // Dark background color
+  --color1: #0b1622; // Dark background color
+  // --color1: #2e073f; // Dark background color
   --color2: #286f6c; // Accent color (can remain the same as light theme for consistency)
   --color2_1: #174340; // Darker accent color (can remain the same)
-  --color3: #8a099b; // Highlight color (adjusted to a more vibrant color for dark mode)
+  --color3: #8a099bd0; // Highlight color (adjusted to a more vibrant color for dark mode)
+  --color3: #8a099bd0; // Highlight color (adjusted to a more vibrant color for dark mode)
   --color3_light: #b540b3; // Lighter highlight color
   --color3_1: #6b0e77; // Darker highlight color
   --color4: #1a1a1a; // Very dark background color
@@ -40,7 +42,7 @@ $text2: "Open Sans", sans-serif;
   --color7: #0e2b47;
   --color7_1: #0e2b47;
   --color8: #fff;
-  --color9: #15202b;
+  --color9: #0b1622;
   --color10: #fff;
   --color11: #fef2f2;
   --color12: #1a1a1a;

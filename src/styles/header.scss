@@ -8,16 +8,16 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 $p;
-  position: sticky;
-  top: 0%;
+  position: fixed;
+  top: -1%;
   // left: 60%;
   z-index: 60;
 
   > .nav_div {
-    // border: 2px solid yellow;
     display: flex;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    width: 80%;
     gap: 2rem;
 
     // position: relative;
@@ -70,8 +70,16 @@ nav {
     position: fixed;
     top: 2rem;
     right: 2rem;
+    transition: transform 0.3s ease;
+
     &:hover {
       color: var(--color3);
+    }
+    &.open {
+      transform: rotate(90deg);
+    }
+    &.close {
+      transform: rotate(0deg);
     }
   }
 }

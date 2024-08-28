@@ -68,7 +68,8 @@ const Home = () => {
               {...animations.h1}
               transition={({ delay: 0.3 }, { duration: 0.6 })}
             >
-              Hi, I Am <br /> Rigan Paul
+              Hi, I Am <br />
+              <div>Rigan Paul</div>
             </motion.h1>
 
             <motion.h5

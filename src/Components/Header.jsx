@@ -1,6 +1,7 @@
 import React from "react";
 import { RiMenu3Line } from "react-icons/ri";
 import Switch from "./Switch";
+import { RxCross1 } from "react-icons/rx";
 
 const Header = ({ menuOpen, setMenuOpen }) => {
   return (
@@ -9,13 +10,13 @@ const Header = ({ menuOpen, setMenuOpen }) => {
         <Switch />
         <NavContent setMenuOpen={setMenuOpen} />
         <button
-          className="navMenuOpen"
+          className={`navMenuOpen ${menuOpen ? "open" : "closed"}`}
           onClick={() => {
             setMenuOpen(!menuOpen);
             // console.log(menuOpen);
           }}
         >
-          <RiMenu3Line />
+          {menuOpen ? <RxCross1 /> : <RiMenu3Line />}
         </button>
       </nav>
     </>
